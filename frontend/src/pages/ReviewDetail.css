@@ -1,0 +1,173 @@
+.review-detail-page {
+  animation: fadeIn 0.6s ease;
+}
+
+.detail-hero {
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0 80px;
+  color: white;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.hero-content-detail {
+  position: relative;
+  z-index: 2;
+}
+
+.detail-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.detail-tagline {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.detail-cuisine {
+  margin-bottom: 20px;
+}
+
+.cuisine-badge,
+.location-badge {
+  display: inline-block;
+  background-color: var(--primary-pink);
+  color: var(--text-dark);
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.detail-rating {
+  font-size: 1.5rem;
+}
+
+.rating-stars {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.rating-count {
+  opacity: 0.8;
+  font-size: 1.2rem;
+}
+
+.detail-content {
+  padding: 40px 20px;
+}
+
+.detail-section {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px var(--shadow);
+  animation: scaleIn 0.5s ease;
+}
+
+.section-heading {
+  color: var(--text-dark);
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--primary-pink);
+}
+
+.section-header-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.overview-text {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.movie-info,
+.restaurant-info {
+  margin-top: 20px;
+}
+
+.info-item {
+  margin-bottom: 10px;
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+.info-item strong {
+  color: var(--text-dark);
+  margin-right: 8px;
+}
+
+.login-prompt {
+  background-color: var(--light-pink);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-prompt p {
+  color: var(--text-dark);
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.sidebar-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px var(--shadow);
+  position: sticky;
+  top: 100px;
+}
+
+.sidebar-image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--shadow);
+}
+
+@media (max-width: 992px) {
+  .sidebar-card {
+    position: static;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .detail-title {
+    font-size: 2rem;
+  }
+
+  .detail-tagline {
+    font-size: 1.1rem;
+  }
+
+  .detail-hero {
+    padding: 80px 0 60px;
+  }
+
+  .section-header-detail {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .section-header-detail .btn {
+    width: 100%;
+  }
+}
+

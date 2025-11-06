@@ -1,0 +1,153 @@
+.review-list {
+  margin-top: 30px;
+}
+
+.review-item {
+  background-color: var(--light-pink);
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  animation: slideIn 0.5s ease;
+}
+
+.review-item:hover {
+  box-shadow: 0 6px 12px var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.review-user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-pink), var(--accent-pink));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+.user-name {
+  font-weight: bold;
+  color: var(--text-dark);
+  font-size: 1.1rem;
+}
+
+.review-date {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.review-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-icon:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
+}
+
+.review-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.review-star {
+  font-size: 1.3rem;
+  color: var(--matte-gray);
+}
+
+.review-star.filled {
+  color: #ffd700;
+}
+
+.rating-number {
+  font-weight: bold;
+  color: var(--text-dark);
+  margin-left: 5px;
+}
+
+.review-comment {
+  color: var(--text-dark);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.review-edited {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--matte-gray);
+}
+
+.review-edited small {
+  color: var(--text-light);
+  font-style: italic;
+}
+
+.no-reviews {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: var(--light-pink);
+  border-radius: 15px;
+}
+
+.no-reviews-icon {
+  font-size: 4rem;
+  margin-bottom: 15px;
+  opacity: 0.5;
+}
+
+.no-reviews p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .review-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .review-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+

@@ -1,0 +1,85 @@
+.item-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.item-card {
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.rating-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 5px 12px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+.star {
+  font-size: 1rem;
+}
+
+.rating-value {
+  font-size: 0.9rem;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+  min-height: 50px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cuisine-tag {
+  display: inline-block;
+  background-color: var(--secondary-pink);
+  color: var(--text-dark);
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.release-date {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Hover effects */
+.item-card:hover .card-title {
+  color: var(--dark-pink);
+}
+
+@media (max-width: 768px) {
+  .card-title {
+    min-height: auto;
+  }
+}
+

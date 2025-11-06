@@ -1,0 +1,144 @@
+.auth-page {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+  animation: fadeIn 0.6s ease;
+}
+
+.auth-container {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.auth-card {
+  background: white;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px var(--shadow);
+  position: relative;
+  z-index: 2;
+  animation: scaleIn 0.6s ease;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.auth-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.auth-subtitle {
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
+.auth-form {
+  margin-bottom: 30px;
+}
+
+.auth-input {
+  padding: 12px 20px;
+  border: 2px solid var(--matte-gray);
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.auth-input:focus {
+  outline: none;
+  border-color: var(--primary-pink);
+  box-shadow: 0 0 0 3px rgba(232, 180, 200, 0.2);
+}
+
+.alert {
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  animation: slideIn 0.4s ease;
+}
+
+.alert-danger {
+  background-color: #ffe0e0;
+  color: #c00;
+  border: 1px solid #ffb0b0;
+}
+
+.auth-footer {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid var(--matte-gray);
+}
+
+.auth-footer p {
+  color: var(--text-light);
+  margin: 0;
+}
+
+.auth-link {
+  color: var(--dark-pink);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.auth-link:hover {
+  color: var(--accent-pink);
+  text-decoration: underline;
+}
+
+.auth-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.decoration-emoji {
+  position: absolute;
+  font-size: 3rem;
+  opacity: 0.2;
+  animation: float 3s ease-in-out infinite;
+}
+
+.decoration-emoji:nth-child(1) {
+  top: 10%;
+  left: -10%;
+  animation-delay: 0s;
+}
+
+.decoration-emoji:nth-child(2) {
+  top: 50%;
+  right: -10%;
+  animation-delay: 1s;
+}
+
+.decoration-emoji:nth-child(3) {
+  bottom: 10%;
+  left: -5%;
+  animation-delay: 2s;
+}
+
+@media (max-width: 576px) {
+  .auth-card {
+    padding: 40px 25px;
+  }
+
+  .auth-title {
+    font-size: 2rem;
+  }
+
+  .decoration-emoji {
+    font-size: 2rem;
+  }
+}
+
