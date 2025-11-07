@@ -13,8 +13,11 @@ RUN npm install --production
 # Copy backend source code
 COPY backend/ ./
 
+# Environment variables will be injected by Railway at runtime
+# No need to set them here
+
 # Expose port
-EXPOSE 5000
+EXPOSE 8080
 
 # Start the server
 CMD ["node", "server.js"]
