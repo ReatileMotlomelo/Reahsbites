@@ -77,7 +77,7 @@ function Home() {
       <section className="content-section">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">🔥 Trending Movies</h2>
+            <h2 className="section-title">Trending Movies</h2>
             <Link to="/browse/movies" className="view-all-link">
               View All →
             </Link>
