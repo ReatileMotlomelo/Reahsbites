@@ -4,7 +4,9 @@ const dotenv = require('dotenv');
 const admin = require('firebase-admin');
 
 // Load environment variables
-dotenv.config();
+// Try .env.production first, then fall back to .env
+dotenv.config({ path: '.env.production' });
+dotenv.config(); // This won't override existing vars
 
 // Debug: Log environment variables
 console.log('Environment check:');
