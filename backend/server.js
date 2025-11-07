@@ -6,6 +6,12 @@ const admin = require('firebase-admin');
 // Load environment variables
 dotenv.config();
 
+// Debug: Log environment variables
+console.log('Environment check:');
+console.log('- PORT:', process.env.PORT);
+console.log('- TMDB_API_KEY:', process.env.TMDB_API_KEY ? `${process.env.TMDB_API_KEY.substring(0, 5)}...` : 'NOT SET');
+console.log('- NODE_ENV:', process.env.NODE_ENV);
+
 // Initialize Express app
 const app = express();
 const PORT = process.env.PORT || 5000;
