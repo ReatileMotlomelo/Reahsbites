@@ -5,6 +5,9 @@ const axios = require('axios');
 const TMDB_API_KEY = process.env.TMDB_API_KEY || 'demo_key';
 const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
 
+// Debug: Log API key status (first 5 chars only for security)
+console.log('TMDB API Key loaded:', TMDB_API_KEY ? `${TMDB_API_KEY.substring(0, 5)}...` : 'NOT SET');
+
 // GET popular movies
 router.get('/popular', async (req, res) => {
   try {
@@ -18,6 +21,7 @@ router.get('/popular', async (req, res) => {
     res.json(response.data);
   } catch (error) {
     console.error('Error fetching popular movies:', error.message);
+    console.error('Error details:', error.response?.data || error);
     res.status(500).json({ error: 'Failed to fetch popular movies' });
   }
 });
